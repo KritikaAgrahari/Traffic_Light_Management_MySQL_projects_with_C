@@ -105,23 +105,11 @@ Consider integrating data from external sources like weather reports or public t
 
 ## Sample Commands
 
-Below are some example commands used in the system:
+Below are some example commands used in the traffic management system:
 
-### Add User:
-```perl
-add_user("John Doe", "john@example.com", "Organizer");
-```
-### Create Event:
+### Add Traffic Sensor:
 ```bash
-   create_event("Tech Conference", "2024-09-15", "10:00 AM", "Auditorium");
-```
-### Register for Event:
-```bash
-   register_for_event(2, 5); // UserID = 2, EventID = 5
-```
-### Mark Attendence:
-```bash
-   mark_attendance(2, 5); // UserID = 2, EventID = 5
+add_traffic_sensor("Camera", "Main St & 3rd Ave", "2024-01-10");
 ```
 
 ## Usage
@@ -142,10 +130,6 @@ add_user("John Doe", "john@example.com", "Organizer");
 We welcome contributions to enhance the functionality of this project. Feel free to fork the repository, make changes, and submit a pull request.
 
 ## Authors
-- [Shyam Tripathi](https://github.com/TheShyamTripathi)
-- [Harrsh Singh Tiwari](https://github.com/Harsh14055/)
-- [Richa Kumari Jaishwal](https://github.com/Richajaishwal0)
-- [Binay Kushwaha](https://github.com/GOLD3PHOENIXsurili)
 
 ## Future Enhancements
 
