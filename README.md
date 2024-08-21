@@ -88,20 +88,15 @@ Consider integrating data from external sources like weather reports or public t
 4. **Install MySQL Connector/C**:
    ```sh
    sudo apt-get install libmysqlclient-dev
-
 ### Project Setup
+
 5. **Clone the Repository**:
    ```sh
-   git clone <https://github.com/TheShyamTripathi/Event_Management_systems_projectUsing_SQL_AND_C/>
-6. **Navigate to Project Directory**:
-   ```sh
-   cd event-management-system
-7. **Compile the program**:
-   ```sh
-   gcc -o event-management main.c -lymsqlclient
-8. **Run the Program**:
-   ```sh
-   ./event_management
+   git clone <https://github.com/KritikaAgrahari/Traffic_Management_System.git>
+
+cd traffic-management-system
+gcc -o traffic_management main.c -lymsqlclient
+./traffic_management
 
 ## Sample Commands
 
@@ -114,16 +109,19 @@ add_traffic_sensor("Camera", "Main St & 3rd Ave", "2024-01-10");
 
 ## Usage
 ### Add Users:
-- Organizers and participants can be added to the system.
+- Add Traffic Managers and Traffic Officers.
 
-### Create Events:
-- Organizers can create events by providing details like title, date, time, and location.
+### Monitor Traffic:
+- Track real-time traffic conditions and incidents.
 
-### Register for Events:
-- Participants can browse available events and register for them.
 
-### Track Attendance:
-- The system allows attendance marking for participants who attend events.
+### Manage Traffic Signals:
+- Adjust traffic lights to control flow and reduce congestion.
+
+
+### Incident Reporting:
+- Report and respond to traffic incidents and hazards.
+
 
 
 ## Contribution
@@ -136,7 +134,7 @@ We welcome contributions to enhance the functionality of this project. Feel free
 Some potential future improvements for the system:
 
 - Implement a graphical user interface (GUI).
-- Add notifications for event reminders.
+- Add notifications for traffic reminders.
 - Implement feedback and reporting features.
 
 
