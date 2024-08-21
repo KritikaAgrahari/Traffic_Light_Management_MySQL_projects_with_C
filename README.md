@@ -82,7 +82,7 @@ Consider integrating data from external sources like weather reports or public t
    sudo mysql_secure_installation
 3. **Create DATABASE**:
    ```sh
-   CREATE DATABASE Event_management;
+   CREATE DATABASE Traffic_management;
 
 ## MySQL Connector/C Setup
 4. **Install MySQL Connector/C**:
