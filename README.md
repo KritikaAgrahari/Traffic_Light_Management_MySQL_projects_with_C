@@ -7,17 +7,21 @@ Develop a database system to manage and analyze traffic data collected from vari
 
 # Key Components
 
-#### 1. Database Design
-#### 2. Data Collection
-#### 3. Query Development
-#### 4. Performance Optimization
-#### 5. Visualization and Reporting
-#### 6. Real-Time Data Integration
+#### [1. Database Design](#database-Schema)
+#### [2. Data Collection](#data-collection)
+#### [3. Query Development](#query-development)
+#### [4. Performance Optimization](#performance-optimization)
+#### [5. Visualization and Reporting](#visualization-and-reporting)
+#### [6. Real-Time Data Integration](#real-time-data-integration)
+#### [7. Getting Started](#getting-started)
+#### [8. Setup and Installation](#setup-and-installation)
+#### [9. Sample Commands](#sample-commands)
+#### [10. Usage](#usage)
+#### [11. Contributors](#contributors)
+#### [12. Future Enhancements](#future-enhancements)
 
 
-
-
-## Database Schema
+##  Database Schema
 The system uses a MySQL database with the following tables:
 
 #### Traffic_Sensors
@@ -53,7 +57,7 @@ The system uses a MySQL database with the following tables:
 - **ReportType** (VARCHAR, e.g., Daily Summary, Peak Hour Analysis)
 - **Details** (TEXT)
 
-## 2. Data Collection
+## Data Collection
 
 ### Sensor Integration
 Set up various sensors throughout the city to collect real-time data on traffic conditions.
@@ -63,6 +67,57 @@ Ensure that data from sensors is logged consistently and accurately into the dat
 
 ### Data Sources
 Consider integrating data from external sources like weather reports or public transportation schedules for a comprehensive analysis.
+
+
+## Query Development
+### Monitor Traffic Flow
+```sql
+SELECT Location, AVG(VehicleCount) AS AvgVehicleCount, AVG(AverageSpeed) AS AvgSpeed
+FROM Traffic_Data
+WHERE Timestamp BETWEEN '2024-08-01' AND '2024-08-31'
+GROUP BY Location;
+```
+### Identify Congestion Patterns
+```sql
+SELECT Location, Timestamp, VehicleCount, AverageSpeed
+FROM Traffic_Data
+WHERE VehicleCount > 100 AND AverageSpeed < 20
+ORDER BY Timestamp;
+```
+### Traffic Incident Reports
+```sql
+SELECT Location, Description, Severity
+FROM Traffic_Incidents
+WHERE Timestamp > DATE_SUB(NOW(), INTERVAL 1 DAY)
+ORDER BY Severity DESC;
+```
+
+## Performance Optimization
+
+#### Indexing
+- **Create indexes** on frequently queried columns such as `Timestamp`, `Location`, and `VehicleCount` to speed up queries.
+
+#### Partitioning
+- **Partition large tables** by date or location to improve performance and manageability.
+
+#### Query Optimization
+- **Analyze slow-running queries** and optimize them by rewriting the query or adding necessary indexes.
+
+## Visualization and Reporting
+
+#### Dashboards
+- **Create interactive dashboards** using tools like Tableau, Power BI, or Grafana to visualize traffic patterns, congestion areas, and incident reports.
+
+#### Reports
+- **Generate regular reports** summarizing traffic conditions, peak times, and incident statistics.
+
+## Real-Time Data Integration
+
+#### Data Streaming
+- **Use technologies** like Apache Kafka or MQTT to handle real-time data streams from traffic sensors.
+
+#### Alerts
+- **Implement real-time alerts** for traffic incidents or congestion that can trigger actions such as adjusting traffic light timings.
 
 ## Getting Started
 
@@ -92,7 +147,7 @@ Consider integrating data from external sources like weather reports or public t
 
 5. **Clone the Repository**:
    ```sh
-   git clone <https://github.com/KritikaAgrahari/Traffic_Management_System.git>
+   git clone <https://github.com/KritikaAgrahari/Traffic_Light_Management_MySQL_projects_with_C.git/>
 
 cd traffic-management-system
 gcc -o traffic_management main.c -lymsqlclient
