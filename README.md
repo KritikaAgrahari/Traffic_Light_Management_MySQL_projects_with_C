@@ -64,6 +64,29 @@ Ensure that data from sensors is logged consistently and accurately into the dat
 ### Data Sources
 Consider integrating data from external sources like weather reports or public transportation schedules for a comprehensive analysis.
 
+### Monitor Traffic Flow
+```sql
+SELECT Location, AVG(VehicleCount) AS AvgVehicleCount, AVG(AverageSpeed) AS AvgSpeed
+FROM Traffic_Data
+WHERE Timestamp BETWEEN '2024-08-01' AND '2024-08-31'
+GROUP BY Location;
+```
+### Identify Congestion Patterns
+```sql
+SELECT Location, Timestamp, VehicleCount, AverageSpeed
+FROM Traffic_Data
+WHERE VehicleCount > 100 AND AverageSpeed < 20
+ORDER BY Timestamp;
+```
+### Traffic Incident Reports
+```sql
+SELECT Location, Description, Severity
+FROM Traffic_Incidents
+WHERE Timestamp > DATE_SUB(NOW(), INTERVAL 1 DAY)
+ORDER BY Severity DESC;
+```
+
+
 ## Getting Started
 
 ### Prerequisites
