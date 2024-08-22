@@ -7,7 +7,7 @@ Develop a database system to manage and analyze traffic data collected from vari
 
 # Key Components
 
-#### 1. Database Design
+### [1. Database Design](#database-Schema)
 #### 2. Data Collection
 #### 3. Query Development
 #### 4. Performance Optimization
