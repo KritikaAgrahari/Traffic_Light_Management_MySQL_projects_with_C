@@ -8,11 +8,11 @@ Develop a database system to manage and analyze traffic data collected from vari
 # Key Components
 
 ### [1. Database Design](#database-Schema)
-#### 2. Data Collection
-#### 3. Query Development
-#### 4. Performance Optimization
-#### 5. Visualization and Reporting
-#### 6. Real-Time Data Integration
+#### [2. Data Collection](data-collection)
+#### [3. Query Development](query-development)
+#### [4. Performance Optimization](performance-optimization)
+#### [5. Visualization and Reporting](visulization-and-reporting)
+#### [6. Real-Time Data Integration](real-time-data-integration)
 
 
 
@@ -92,7 +92,7 @@ Consider integrating data from external sources like weather reports or public t
 
 5. **Clone the Repository**:
    ```sh
-   git clone <https://github.com/KritikaAgrahari/Traffic_Management_System.git>
+   git clone <https://github.com/KritikaAgrahari/Traffic_Light_Management_MySQL_projects_with_C.git/>
 
 cd traffic-management-system
 gcc -o traffic_management main.c -lymsqlclient
