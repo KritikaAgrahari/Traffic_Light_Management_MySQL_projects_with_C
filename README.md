@@ -8,16 +8,16 @@ Develop a database system to manage and analyze traffic data collected from vari
 # Key Components
 
 ### [1. Database Design](#database-Schema)
-#### [2. Data Collection](data-collection)
-#### [3. Query Development](query-development)
-#### [4. Performance Optimization](performance-optimization)
-#### [5. Visualization and Reporting](visulization-and-reporting)
-#### [6. Real-Time Data Integration](real-time-data-integration)
+#### [2. Data Collection](#data-collection)
+#### [3. Query Development](#query-development)
+#### [4. Performance Optimization](#performance-optimization)
+#### [5. Visualization and Reporting](#visulization-and-reporting)
+#### [6. Real-Time Data Integration](#real-time-data-integration)
 
 
 
 
-## Database Schema
+## 1. Database Schema
 The system uses a MySQL database with the following tables:
 
 #### Traffic_Sensors
