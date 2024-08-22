@@ -11,10 +11,14 @@ Develop a database system to manage and analyze traffic data collected from vari
 #### [2. Data Collection](#data-collection)
 #### [3. Query Development](#query-development)
 #### [4. Performance Optimization](#performance-optimization)
-#### [5. Visualization and Reporting](#visulization-and-reporting)
+#### [5. Visualization and Reporting](#visualization-and-reporting)
 #### [6. Real-Time Data Integration](#real-time-data-integration)
-
-
+#### [7. Getting Started](#getting-started)
+#### [8. Setup and Installation](#setup-and-installation)
+#### [9. Sample Commands](#sample-commands)
+#### [10. Usage](#usage)
+#### [11. Contributors](#contributors)
+#### [12. Future Enhancements](#future-enhancements)
 
 
 ##  Database Schema
@@ -65,7 +69,7 @@ Ensure that data from sensors is logged consistently and accurately into the dat
 Consider integrating data from external sources like weather reports or public transportation schedules for a comprehensive analysis.
 
 
-## Query Devlopment
+## Query Development
 ### Monitor Traffic Flow
 ```sql
 SELECT Location, AVG(VehicleCount) AS AvgVehicleCount, AVG(AverageSpeed) AS AvgSpeed
